@@ -58,11 +58,11 @@ As a country, the United States spends approximately $650 billion per year on it
  * *enroll*, total school enrollment
  * *frpl*, proportion (0-1) of students in school receiving free- or reduced-price meals
  * *sesavgall*, Census-based SES composite index for all families residing within school district
- * *lninc50avgall*, Census-based log of median income for all families residing within school district
  * *baplusavgall*, Census-based Bachelor's degree-plus rate for all adults in families residing within district
  * *unempavgall*, Census-based unemployment rate for all families residing within district
  * *snapavgall*, Census-based SNAP receipt rate for all families residing within the district
  * *locale*, Census-based location of schools attended by majority/plurality of students (Urban, Suburb, Town, Rural)
+ * *inc50avgall*, Census-based median income for all families residing within school district
  
 
 ### Assignment Details
