@@ -46,6 +46,8 @@ Lectures:
 -->
 - Data: [male_do_eating.sav](./data/male_do_eating.sav) | [codebook](./data/male_do_eating_codebook.pdf)
 - R code: [R script](./slides/EDUC643_1_code.R)
+- Labs:
+    + Week 1: [doc](./labs/EDUC643_Wk1.docx) | [rmd](./labs/Week1.Rmd)
 
 Assignment 1: get started!!! (see below)
 
