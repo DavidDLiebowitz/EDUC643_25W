@@ -15,7 +15,7 @@ navbar:
       - text: "2. GLM"
         href: ./slides/EDUC643_2_GLM.html
       - text: "3. Regression inference"
-        #href: ./slides/EDUC643_3_inference.html
+        href: ./slides/EDUC643_3_inference.html
       - text: "4. Correlation...and causality"
         #href: ./slides/EDUC643_4_correlation.html
       - text: "5. Regression assumptions"
