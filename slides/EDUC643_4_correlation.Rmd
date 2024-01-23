@@ -112,20 +112,20 @@ class: middle, inverse
 ---
 # Correlations
 
-* Correlation coefficients $(r)$ describe the **strength** of a linear relationship between two variables. 
+* Correlation coefficients $(r)$ describe the .red-pink[**strength**] of a linear relationship between two variables. 
 
 * The concept was first developed by Karl Pearson a eugenics professor at the University College of London. As we discussed last term, he held many despicable [views](https://nautil.us/how-eugenics-shaped-statistics-238014/).
 
 * He (along with Francis Galton and RA Fisher) also pioneered many of the basic tools of modern statistics, including the concepts of standard deviation, $\chi^2$, goodness of fit and the correlation coefficient
 
-* Correlations are dimensionless measures that eliminate the metrics of any particular scale. 
+* Correlations are ***dimensionless measures*** that eliminate the metrics of any particular scale. 
 
 * To construct these dimensionless measures requires **standardizing** each variable.
 
 ---
 # Standardizing variables
 
-* Any variable can be standardized using a simple algorithm.
+* As a reminder, any variable can be standardized using a simple algorithm.
 
 Each observation $(i)$ is transformed into standardized form using the following formula:
 
@@ -205,8 +205,8 @@ std <- ggplot(do, aes(EDEQ_std, BMI_std)) +
 
 std
 ```
-Note that the scale of our variables have changed.
 
+- Note that the scale of our variables have changed.
 - The standardized regression line goes through the origin (0, 0)
 
 ---

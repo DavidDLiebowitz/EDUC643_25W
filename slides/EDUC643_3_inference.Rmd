@@ -622,7 +622,7 @@ plot2
 ```
 
 ---
-# Condidence interval intuition
+# Confidence interval intuition
 ```{r, echo=F, fig.height=7}
 library(gganimate)
 nsim = 100 ## Number of simulations
