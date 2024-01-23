@@ -46,7 +46,7 @@ Lectures:
 - R code: [R script](./slides/EDUC643_1_code.R)
 - Labs:
     + Week 1: [doc](./labs/EDUC643_Wk1.docx) | [rmd](./labs/Week1.Rmd)
-    + Week 3: [rmd]
+    + Week 3: [rmd](./labs/Week3.Rmd)
 
 Assignment 1: get started!!! (see below)
 
