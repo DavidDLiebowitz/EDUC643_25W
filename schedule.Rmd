@@ -41,13 +41,12 @@ Lectures:
 - Class 1 (1/9) slides: [html](./slides/EDUC643_1_intro.html) | [pdf](./slides/EDUC643_1_intro.pdf)
 - Class 2 (1/11) slides: [html](./slides/EDUC643_2_GLM.html) | [pdf](./slides/EDUC643_2_GLM.pdf)
 - Class 3 (1/18) slides: [html](./slides/EDUC643_3_inference.html) | [pdf](./slides/EDUC643_3_inference.pdf)
-<!--
-- Class 4 (1/18) slides: [html](./slides/EDUC643_4_correlation.html) | [pdf](./slides/EDUC643_4_correlation.pdf)
--->
+- Class 4 (1/23) slides: [html](./slides/EDUC643_4_correlation.html) | [pdf](./slides/EDUC643_4_correlation.pdf)
 - Data: [male_do_eating.sav](./data/male_do_eating.sav) | [codebook](./data/male_do_eating_codebook.pdf)
 - R code: [R script](./slides/EDUC643_1_code.R)
 - Labs:
     + Week 1: [doc](./labs/EDUC643_Wk1.docx) | [rmd](./labs/Week1.Rmd)
+    + Week 3: [rmd]
 
 Assignment 1: get started!!! (see below)
 
@@ -71,14 +70,14 @@ Readings:
 
 Lecture: 
 <!--
-- Class 5-6 (1/23 and 1/25) slides: [html](./slides/EDUC643_5_assumptions.html) | [pdf](./slides/EDUC643_5_assumptions.pdf)
+- Class 5-6 (1/25 and 1/30) slides: [html](./slides/EDUC643_5_assumptions.html) | [pdf](./slides/EDUC643_5_assumptions.pdf)
 - Data: [male_do_eating.sav](./data/male_do_eating.sav)
 - R code: [R script](./slides/EDUC643_5_code.R)
 -->
 
 Assignment 1:
 
-- Due: February 1, 11:59pm
+- Due: February 5, 11:59pm
 - Assignment: [html file](./assignments/assignment_1.html)
 - Data: [nerds.csv](./data/nerds.csv)
  
@@ -106,7 +105,7 @@ Readings:
 
 Lecture: 
 <!--
-- Class 7-8 (1/30, 2/1 and 2/6) slides: [html](./slides/EDUC643_7_mult_regression.html) | [pdf](./slides/EDUC643_7_mult_regression.pdf)
+- Class 7-8 (2/1, 2/6) slides: [html](./slides/EDUC643_7_mult_regression.html) | [pdf](./slides/EDUC643_7_mult_regression.pdf)
 - Data: [male_do_eating.sav](./data/male_do_eating.sav)
 - R code: [R script](./slides/EDUC643_7_code.R)
 - Prototypical plots: [xlsx](./data/prototypical_plots.xlsx)
@@ -114,7 +113,7 @@ Lecture:
  
 Assignment 2: 
 
-- Due: Feb. 15, 11:59pm
+- Due: Feb. 16, 11:59pm
 <!--
 - Assignment: [html file](./assignments/assignment_3.html)
 - Data: [nerds.csv](./data/nerds.csv)
@@ -151,7 +150,7 @@ Lecture:
 
 Assignment 3:
 
-- Due: Feb. 22, 11:59pm
+- Due: Feb. 26, 11:59pm
 
 <!--
 - Assignment: [html file](./assignments/assignment_4.html)
@@ -190,7 +189,7 @@ Lecture:
 
 Assignment 4:
 
-- Due: March 7, 11:59pm
+- Due: March 8, 11:59pm
 
 <!--
 - Assignment: [html file](./assignments/assignment_5.html)
