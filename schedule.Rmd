@@ -69,11 +69,11 @@ Readings:
 - [LSWR Chapter 15.8-15.9](https://learningstatisticswithr.com/lsr-0.6.pdf) 
 
 Lecture: 
-<!--
+
 - Class 5-6 (1/25 and 1/30) slides: [html](./slides/EDUC643_5_assumptions.html) | [pdf](./slides/EDUC643_5_assumptions.pdf)
 - Data: [male_do_eating.sav](./data/male_do_eating.sav)
 - R code: [R script](./slides/EDUC643_5_code.R)
--->
+
 
 Assignment 1:
 
