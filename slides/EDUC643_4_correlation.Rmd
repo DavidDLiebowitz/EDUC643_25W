@@ -371,7 +371,7 @@ Common barriers in attributing causality to observed co-relationships include:
 - .blue[Confounders]: a third variable causes changes in X and also in Y
 - [Colliders](http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/): a third variable that is caused by both the predictor and outcome; controlling for this can make a true causal relationship disappear!
 - .blue[Reverse causation]: X may cause Y **or** Y may cause X
-- [Simpson's Paradox](https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_4_correlation.html#31): a third variable may reverse the correlation
+- [Simpson's Paradox](https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_4_correlation.html#45): a third variable may reverse the correlation
 - .blue[Selection bias]: due to the way in which the sample was constructed, observed relationships (or lack thereof) mask the true underlying relationship.
 - Also, **lack** of correlation $\neq$ **lack** of causality
 
