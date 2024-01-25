@@ -371,7 +371,7 @@ Common barriers in attributing causality to observed co-relationships include:
 - .blue[Confounders]: a third variable causes changes in X and also in Y
 - [Colliders](http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/): a third variable that is caused by both the predictor and outcome; controlling for this can make a true causal relationship disappear!
 - .blue[Reverse causation]: X may cause Y **or** Y may cause X
-- [Simpson's Paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox): a third variable may reverse the correlation
+- [Simpson's Paradox](https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_4_correlation.html#31): a third variable may reverse the correlation
 - .blue[Selection bias]: due to the way in which the sample was constructed, observed relationships (or lack thereof) mask the true underlying relationship.
 - Also, **lack** of correlation $\neq$ **lack** of causality
 
@@ -548,3 +548,51 @@ class: middle, inverse
 - Due February 5, 11:59pm
 
 ### Next time: Regression assumptions
+
+---
+# Simpson's Paradox
+
+```{r, echo=F, fig.height=6}
+set.seed(1234)
+height <- rep(60, 1000)
+a <- c("Age 10-14", "Age 70-74")    
+age <- rep(a, 250)
+bball <- cbind.data.frame(age, height)
+
+bball <- bball %>% mutate(height = case_when(age=="Age 10-14" ~ height,
+                                             age=="Age 70-74" ~ height+10))
+
+bball <- bball %>% mutate(height = height + rnorm(length(height), 0, 5))
+
+bball <- bball %>% mutate(skill = faux::rnorm_pre(height, mu = 0, sd = 5, r = 0.5))
+
+bball <- bball %>% mutate(skill = case_when(age=="Age 10-14" ~ skill+4,
+                                            age=="Age 70-74" ~ skill-4))
+
+
+plot <- ggplot(data=bball, aes(height, skill)) + 
+  geom_point() +
+  geom_smooth(method="lm", se=F) +
+  ggtitle("Relationship between height and basketball ability") +
+  xlab("height (in)") +
+  theme_minimal(base_size = 16)
+
+plot 
+
+
+```
+
+---
+# Simpson's Paradox
+```{r, fig.height=6}
+ggplot(data=bball, aes(height, skill, col=age)) + 
+  geom_point() +
+  geom_smooth(method="lm", se=F) +
+  ggtitle("Relationship between height and basketball ability") +
+  xlab("height (in)") +
+  theme_minimal(base_size = 16) +
+  theme(legend.position="none") +
+  annotate("text", x=50, y=12, label="Age 10-14", color="#F8766D", size=5) +
+  annotate("text", x=84, y=-12, label="Age 70-74", color="#00BFC4", size=5)
+```
+
