@@ -21,7 +21,7 @@ navbar:
       - text: "5. Regression assumptions"
         href: ./slides/EDUC643_5_assumptions.html
       - text: "6. Regression assumptions"
-        #href: ./slides/EDUC643_5_assumptions.html
+        href: ./slides/EDUC643_5_assumptions.html
       - text: "7. Multiple regression I"
         #href: ./slides/EDUC643_7_mult_regression.html
       - text: "8. Multiple regression II"
