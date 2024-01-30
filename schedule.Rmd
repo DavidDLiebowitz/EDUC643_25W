@@ -73,7 +73,8 @@ Lecture:
 - Class 5-6 (1/25 and 1/30) slides: [html](./slides/EDUC643_5_assumptions.html) | [pdf](./slides/EDUC643_5_assumptions.pdf)
 - Data: [male_do_eating.sav](./data/male_do_eating.sav)
 - R code: [R script](./slides/EDUC643_5_code.R)
-
+- Labs: 
+    + Week 4: [doc](./labs/EDUC653_Wk4.docx) | [RMarkdown assignment template](./labs/formatted_rmd_starter.Rmd)
 
 Assignment 1:
 
