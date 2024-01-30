@@ -217,18 +217,18 @@ summary(lm(BMI ~ EDEQ_noise, data=do))
 ## 
 ## Residuals:
 ##     Min      1Q  Median      3Q     Max 
-## -18.766  -3.828  -0.945   2.667  33.214 
+## -18.440  -3.880  -1.040   3.018  32.665 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  24.1999     0.2588  93.512  &lt; 2e-16 ***
-*## EDEQ_noise    0.8284     0.1289   6.428 1.93e-10 ***
+## (Intercept)  24.0614     0.2541  94.701  &lt; 2e-16 ***
+*## EDEQ_noise    0.9350     0.1258   7.432 2.17e-13 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-*## Residual standard error: 6.132 on 1083 degrees of freedom
-## Multiple R-squared:  0.03675,	Adjusted R-squared:  0.03586 
-## F-statistic: 41.32 on 1 and 1083 DF,  p-value: 1.931e-10
+*## Residual standard error: 6.094 on 1083 degrees of freedom
+## Multiple R-squared:  0.04852,	Adjusted R-squared:  0.04764 
+## F-statistic: 55.23 on 1 and 1083 DF,  p-value: 2.173e-13
 ```
 
 ---
@@ -599,7 +599,7 @@ For the standard errors (and associated inference tests) that we conduct in the 
 ```r
 qq &lt;- ggplot(do) + 
         stat_qq(aes(sample=stu_resid)) +
-        geom_abline(color=blue)
+        geom_abline(color=blue)   # by default, slope=1, intercept=0
 ```
 
 &lt;img src="EDUC643_5_assumptions_files/figure-html/unnamed-chunk-29-1.png" style="display: block; margin: auto;" /&gt;
@@ -634,7 +634,7 @@ If observations (and residuals) are correlated (i.e., there is some feature in o
 ---
 ## Solutions to residual independence
 
-.small[We won't spend time here, but if you are concerned about the presence of clusters in your data--*because you are worried it will affect your inference*--consider using cluster-robust standard errors, which inflate standard errors for the *k*&lt;sup&gt;th&lt;/sup&gt; regressor by] `\(\tau_k\)` .small[, where] `\(\tau_k = 1 + \rho_{kx} \rho_{\mu}* (\text{avg. cluster size} - 1)\)`.
+.small[We won't spend time here, but if you are concerned about the presence of clusters in your data--*because you are worried it will affect your inference*--consider using cluster-robust standard errors, which inflate standard errors for the *k*&lt;sup&gt;th&lt;/sup&gt; regressor by] `\(\tau_k\)` .small[, where] `\(\tau_k \approx 1 + \rho_{kx} \rho_{\mu}* (\text{avg. cluster size} - 1)\)`.
 
 
 ```r
@@ -853,6 +853,9 @@ We can conduct a series of diagnostic steps and (sometimes) corrections to ensur
 
 ### Next week: Multiple regression
 
+--
+
+.red[**Midterm Student Experience Survey!!!**]
 
  
     </textarea>

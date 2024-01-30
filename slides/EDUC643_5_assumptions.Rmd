@@ -667,10 +667,10 @@ ggplot(do, aes(x = predict, y = stu_resid)) +
 ```{r, echo=T}
 qq <- ggplot(do) + 
         stat_qq(aes(sample=stu_resid)) +
-        geom_abline(color=blue)
+        geom_abline(color=blue)   # by default, slope=1, intercept=0
 ```
 
-```{r, fig.height=3.5}
+```{r, fig.height=3.25}
 qq +
   theme_minimal(base_size = 16)
 ```
@@ -728,7 +728,7 @@ ggplot(do, aes(x = predict, y = stu_resid, col=city)) +
 ---
 ## Solutions to residual independence
 
-.small[We won't spend time here, but if you are concerned about the presence of clusters in your data--*because you are worried it will affect your inference*--consider using cluster-robust standard errors, which inflate standard errors for the *k*<sup>th</sup> regressor by] $\tau_k$ .small[, where] $\tau_k = 1 + \rho_{kx} \rho_{\mu}* (\text{avg. cluster size} - 1)$.
+.small[We won't spend time here, but if you are concerned about the presence of clusters in your data--*because you are worried it will affect your inference*--consider using cluster-robust standard errors, which inflate standard errors for the *k*<sup>th</sup> regressor by] $\tau_k$ .small[, where] $\tau_k \approx 1 + \rho_{kx} \rho_{\mu}* (\text{avg. cluster size} - 1)$.
 
 ```{r, echo=T}
 modelsummary(lm_city,
@@ -961,5 +961,8 @@ We can conduct a series of diagnostic steps and (sometimes) corrections to ensur
 
 ### Next week: Multiple regression
 
+--
+
+.red[**Midterm Student Experience Survey!!!**]
 
  
