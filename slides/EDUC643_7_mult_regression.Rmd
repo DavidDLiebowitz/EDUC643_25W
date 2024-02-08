@@ -993,7 +993,7 @@ If two predictors are "too highly" correlated, we can't adjust for one to evalua
 
 Multicollinearity occurs when predictor variables are highly related to each other.
 
-This can straightforward to detect, such as when two of our predictors are strongly related to one another:
+This can be straightforward to detect, such as when two of our predictors are strongly related to one another:
 - Simple and adjusted slopes differ dramatically for two or more predictors
 - Estimated adjusted slopes seem substantively wrong
 - Standard errors *increase* with added predictors
@@ -1038,7 +1038,7 @@ include_graphics("venn2.png")
 .pull-left[
 .small[
 - **Highly correlated predictors**: jointly explained proportion of "c" is large; independent proportions of "a" and "b" are quite small; adding the other predictor will not help much
-- **Fairly uncorrelated predictors**: jointly explained proportion of "c" is relatively small; independent proportions of "a" and "b" are independently or both fairly meaningful; addign predictors will help
+- **Fairly uncorrelated predictors**: jointly explained proportion of "c" is relatively small; independent proportions of "a" and "b" are independently or both fairly meaningful; adding predictors will help
 ]
 ]
 
@@ -1084,7 +1084,7 @@ notes = "Notes: cells report Pearson correlation coefficients.")
 
 --
 
-We can examine these correlations for the presence of multi-collinearity in our data using a correlation matrix. .blue[**Do you see evidence of this here?**]
+We can examine these correlations for the presence of multi-collinearity in our data using a .red-pink[correlation matrix]. .blue[**Do you see evidence of this here?**]
 
 ---
 # Visual heatmap
