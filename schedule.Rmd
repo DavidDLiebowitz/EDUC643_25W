@@ -142,20 +142,19 @@ Readings:
 
 Lecture: 
 
-<!--
 - Class 10 - 12 (2/13,  2/15 and 2/20) slides: [html](./slides/EDUC643_10_categorical.html) | [pdf](./slides/EDUC643_10_categorical.pdf)
 - Data: [dibels.csv](./data/dibels.csv) | [codebook](./data/dibels_codebook.pdf)
 - R code: [R script](./slides/EDUC643_10_code.R)
--->
+- Labs:
+    + Week 6: [doc](./labs/EDUC643_Wk6.docx)
 
 Assignment 3:
 
 - Due: Feb. 26, 11:59pm
 
-<!--
 - Assignment: [html file](./assignments/assignment_4.html)
 - Data: [nerds.csv](./data/nerds.csv)
--->
+
 
 ## Unit 5: Interactions and non-linearity
  

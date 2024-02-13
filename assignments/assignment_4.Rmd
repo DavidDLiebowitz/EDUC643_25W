@@ -1,5 +1,5 @@
 ---
-title: "EDUC 643 Assignment 4"
+title: "EDUC 643 Assignment 3"
 subtitle: "Categorical predictors"
 output: html_document
 ---
@@ -53,11 +53,11 @@ As a country, the United States spends approximately $650 billion per year on it
  * *enroll*, total school enrollment
  * *frpl*, proportion (0-1) of students in school receiving free- or reduced-price meals
  * *sesavgall*, Census-based SES composite index for all families residing within school district
- * *lninc50avgall*, Census-based log of median income for all families residing within school district
  * *baplusavgall*, Census-based Bachelor's degree-plus rate for all adults in families residing within district
  * *unempavgall*, Census-based unemployment rate for all families residing within district
  * *snapavgall*, Census-based SNAP receipt rate for all families residing within the district
  * *locale*, Census-based location of schools attended by majority/plurality of students (Urban, Suburb, Town, Rural)
+ * *inc50avgall*, Census-based median income for all families residing within school district
  
 
 ### Assignment Details
@@ -84,4 +84,4 @@ As a country, the United States spends approximately $650 billion per year on it
 
 3.1 Review the variables you have at your disposal and select a set of substantively sensible (and non multi-collinear) ***continuous*** and ***categorical*** covariates that might explain schools' per-pupil expenditure and help clarify the relationship between $ppe$ and $frpl$. **(1 point)**
 
-3.2 Present a **table** and **plot** characterizing the regression-adjusted relationship between $frpl$ and $ppe$. Substantively interpret these results as you would for an academic journal article. **(2 points)**
+3.2 Present a **table** and **plot** characterizing the regression-adjusted relationship between $frpl$ and $ppe$. Substantively interpret these results as you would for an academic journal article. **(3 points)**
