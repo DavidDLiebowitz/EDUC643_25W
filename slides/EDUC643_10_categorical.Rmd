@@ -303,7 +303,7 @@ Understanding exactly how to do this will take repeated time and practice, and y
 
 --
 
-You don't need to be able to do this for assignments in this class, but I have the code for how to do so at the [end of the slides]((https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_10_categorical.html#110).
+You don't need to be able to do this for assignments in this class, but I have the code for how to do so at the [end of the slides](https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_10_categorical.html#139).
 
 ```{r, echo=F}
 dibels_long <- dibels %>% 
@@ -464,7 +464,7 @@ summary(fit1)
 ```{r, echo=F, highlight.output=c(12)}
 summary(fit1)
 ```
-Our point estimate is identical to our [original two-sample $t$-test](https://daviddliebowitz.github.io/EDUC643_23W/slides/EDUC643_9_categorical.html#17), though our inference has changed slightly.
+Our point estimate is identical to our [original two-sample $t$-test](https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_10_categorical.html#19), though our inference has changed slightly.
 
 
 ---
