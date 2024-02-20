@@ -147,6 +147,7 @@ Lecture:
 - R code: [R script](./slides/EDUC643_10_code.R)
 - Labs:
     + Week 6: [doc](./labs/EDUC643_Wk6.docx)
+    + Week 7: [doc](./labs/EDUC643_Wk7.docx)
 
 Assignment 3:
 
