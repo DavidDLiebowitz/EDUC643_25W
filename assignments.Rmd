@@ -92,7 +92,7 @@ Deadline: Feb. 26, 11:59pm
 
 Download: [html file](./assignments/assignment_4.html) | [nerds dataset](./data/nerds.csv)
 
-Key: <!-- [doc file](./assignments/keys/assignment_4_key.docx) | [R script](./assignments/keys/assignment_4_key.R) -->
+Key: [doc file](./assignments/keys/assignment_4_key.docx) | [R script](./assignments/keys/assignment_4_key.R)
 
 
 #### 3.4. Assignment 4
