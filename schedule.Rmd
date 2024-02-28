@@ -181,8 +181,8 @@ Readings:
 Lecture: 
 
 
-- Class 13-15 (2/22 and 2/27) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
-- Class 16-18 (3/5, 3/7 and 3/12) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf)
+- Class 13-14 (2/22 and 2/27) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
+- Class 15-17 (2/29, 3/5 and 3/7) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf)
 - Data: [dibels.csv](./data/dibels.csv) | [pisa.csv](./data/pisa.csv) | [oecd_2022.xlsx](./data/oecd_2022.xlsx)
 - R script: [interactions](./slides/EDUC643_13_code.R) | [non-linearity](./slides/EDUC643_16_code.R) 
 - Labs:
@@ -199,7 +199,6 @@ Assignment 4:
 ## Unit 6: Model building
  
 **Topic: Model building**
-
 
 Objectives
 
@@ -218,7 +217,7 @@ Readings:
 Lecture: 
 
 <!--
-- Class 19 slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
+- Class 18-19 slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
 -->
 
 ## Final:
