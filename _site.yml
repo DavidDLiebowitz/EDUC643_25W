@@ -38,17 +38,15 @@ navbar:
         href: ./slides/EDUC643_13_interactions.html
       - text: "14. Interactions II"
         href: ./slides/EDUC643_13_interactions.html
-      - text: "15. Interactions III"
-        #href: ./slides/EDUC643_13_interactions.html
-      - text: "16. Non-linearity I"
+      - text: "15. Non-linearity I"
         #href: ./slides/EDUC643_16_nonlinearity.html
-      - text: "17. Non-linearity II"
+      - text: "16. Non-linearity II"
         #href: ./slides/EDUC643_16_nonlinearity.html
-      - text: "18. Non-linearity III"
+      - text: "17. Non-linearity III"
         #href: ./slides/EDUC643_16_nonlinearity.html
-      - text: "19. Model building"
+      - text: "18. Model building"
         #href: ./slides/EDUC643_19_modeling.html
-      - text: "20. Model building"
+      - text: "19. Model building"
         #href: ./slides/EDUC643_19_modeling.html
 
 

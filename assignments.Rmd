@@ -125,4 +125,4 @@ Objectives of this assignment:
 
 Deadline: March 21, 12:01pm
 
-Download: <!-- [html file](./assignments/assignment_6.html) | [seda dataset](./data/seda.csv) -->
+Download: [html file](./assignments/assignment_6.html) | [seda dataset](./data/seda.csv)

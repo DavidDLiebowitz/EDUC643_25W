@@ -176,15 +176,15 @@ Objectives
 Readings: 
 
 - **Complete prior to 2/27 class:** [LSWR Chapter 16.2](https://learningstatisticswithr.com/lsr-0.6.pdf)
-- **Complete prior to 3/12 class:** [Campbell & Ramey 1994](./data/Campbell Ramey 1994.pdf)
+- **Complete prior to 3/7 class:** [Campbell & Ramey 1994](./data/Campbell Ramey 1994.pdf)
 
 Lecture: 
 
 
-- Class 13-15 (2/22, 2/27 and 2/29) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
-<!-- - Class 16-18 (3/5, 3/7 and 3/12) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf) -->
-- Data: [dibels.csv](./data/dibels.csv) <!-- | [pisa.csv](./data/pisa.csv) | [oecd_2022.xlsx](./data/oecd_2022.xlsx) -->
-- R script: [interactions](./slides/EDUC643_13_code.R) <!-- | [non-linearity](./slides/EDUC643_16_code.R) -->
+- Class 13-15 (2/22 and 2/27) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
+- Class 16-18 (3/5, 3/7 and 3/12) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf)
+- Data: [dibels.csv](./data/dibels.csv) | [pisa.csv](./data/pisa.csv) | [oecd_2022.xlsx](./data/oecd_2022.xlsx)
+- R script: [interactions](./slides/EDUC643_13_code.R) | [non-linearity](./slides/EDUC643_16_code.R) 
 - Labs:
     + Week 8: [.Rmd](./labs/Week8.Rmd)
 
@@ -224,7 +224,5 @@ Lecture:
 ## Final:
 
 - Due: Mar. 21, 12:01pm
-<!--
 - Assignment: [html file](./assignments/assignment_6.html)
 - Data: [seda.csv](./data/seda.csv)
--->
