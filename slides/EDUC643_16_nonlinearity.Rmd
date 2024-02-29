@@ -375,7 +375,7 @@ include_graphics("log_scale.png")
 - Taking logs spreads out the distance between small (closer to 0) values and compresses the distance between large (further from zero) values.
 - Log base anything(1) is = 0
 - Log base anything(0) is undefined (can't raise anything to a power and get 0)
-- Log base anything>0(negative number) is undefined (technically a complex number)
+- Log base anything(<0) (i.e., log of a negative number) is undefined (technically a complex number)
 - Taking logs is a .red-pink[**monotonic**] transformation; doesn’t change the order of any of the underlying raw values
 
 
