@@ -218,9 +218,9 @@ Readings:
 
 Lecture: 
 
-<!--
-- Class 18-19 slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
--->
+- Class 18 slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
+
+**Class cancelled on March 14** (David in Baltimore for AEFP Conference)
 
 ## Final:
 
