@@ -76,7 +76,7 @@ As a country, the United States spends approximately $650 billion per year on it
 
 2.2 Test your null hypothesis using the statistical test that most directly *and efficiently* answers the above research question. Interpret the results of this test. **(2 points)**
 
-2.3 State the magnitude by which schools at each of the different grade-bands differ from each other in their per-pupil spending. Select (and justify) the most sensible group to serve as the comparison type of school. **(2 points)**
+2.3 State the magnitude by which schools at each of the different grade-bands differ from each other in their per-pupil spending and assess whether this magnitude is statistically different from zero. Select (and justify) the most sensible group to serve as the comparison type of school. **(2 points)**
 
 2.4 High schools are generally understood to have greater resource needs than other K-12 schools due to fundings items such as science laboratories, extra-curriculars and specialized classes. Test whether high schools spend more per-pupil than all other schools and interpret your results. **(1 point)**
 
