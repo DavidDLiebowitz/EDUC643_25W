@@ -51,7 +51,7 @@ Objectives of this assignment:
  * Propose solutions to OLS assumption violations and discuss their potential merits and drawbacks 
 
 
-Deadline: Feb. 5, 11:59pm
+Deadline: Feb. 3, 11:59pm
 
 Download: [html file](./assignments/assignment_1.html) | [nerds dataset](./data/nerds.csv)
 
@@ -69,11 +69,12 @@ Objectives of this assignment:
  
  * Assess multiple regression results for assumptions violations
 
-Deadline: Feb. 16, 11:59pm
+Deadline: Feb. 14, 11:59pm
 
+<!--
 Download: [html file](./assignments/assignment_3.html) | [nerds dataset](./data/nerds.csv)
 
-<!-- Key: [doc file](./assignments/keys/assignment_2_key.docx) | [R script](./assignments/keys/assignment_2_key.R) -->
+ Key: [doc file](./assignments/keys/assignment_2_key.docx) | [R script](./assignments/keys/assignment_2_key.R) -->
 
 
 #### 3.3. Assignment 3
@@ -88,11 +89,12 @@ Objectives of this assignment:
  
  * Use categorical predictors as covariates and use them to plot prototypical values of continuous relationships
 
-Deadline: Feb. 26, 11:59pm
+Deadline: Feb. 24, 11:59pm
 
+<!--
 Download: [html file](./assignments/assignment_4.html) | [nerds dataset](./data/nerds.csv)
 
-<!-- Key: [doc file](./assignments/keys/assignment_3_key.docx) | [R script](./assignments/keys/assignment_3_key.R) -->
+ Key: [doc file](./assignments/keys/assignment_3_key.docx) | [R script](./assignments/keys/assignment_3_key.R) -->
 
 
 #### 3.4. Assignment 4
@@ -105,11 +107,12 @@ Objectives of this assignment:
  
  * Construct plots conveying substantively accessible results of interaction models
  
-Deadline: March 8, 11:59pm
+Deadline: March 7, 11:59pm
 
+<!--
 Download: [html file](./assignments/assignment_5.html) | [nerds dataset](./data/nerds.csv)
 
-<!-- Key: [doc file](./assignments/keys/assignment_4_key.docx) | [R script](./assignments/keys/assignment_4_key.R) -->
+ Key: [doc file](./assignments/keys/assignment_4_key.docx) | [R script](./assignments/keys/assignment_4_key.R) -->
 
 #### 3.5. Final Project
 
@@ -123,6 +126,8 @@ Objectives of this assignment:
  
  * Using tables, figures and words, interpret the results of your analysis for an academic research audience
 
-Deadline: March 21, 12:01pm
+Deadline: March 20, 12:01pm
 
+<!--
 Download: [html file](./assignments/assignment_6.html) | [seda dataset](./data/seda.csv)
+-->
