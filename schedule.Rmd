@@ -239,5 +239,8 @@ Lecture:
 ## Final:
 
 - Due: Mar. 20, 12:01pm
+
+<!--
 - Assignment: [html file](./assignments/assignment_6.html)
 - Data: [seda.csv](./data/seda.csv)
+-->
