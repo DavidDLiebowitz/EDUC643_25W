@@ -33,8 +33,8 @@ Objectives:
 
 Readings: 
 
-- Complete **prior to Jan. 18** class: [LSWR Chapter 15.1-15.2 and 15.4-15.7](https://learningstatisticswithr.com/lsr-0.6.pdf) and [Hu 2021](https://www.bostonreview.net/articles/race-policing-and-the-limits-of-social-science/)
-- Complete **prior to Jan. 23** class: [LSWR Chapter 5.7](https://learningstatisticswithr.com/lsr-0.6.pdf)
+- Complete **prior to Jan. 16** class: [LSWR Chapter 15.1-15.2 and 15.4-15.7](https://learningstatisticswithr.com/lsr-0.6.pdf) and [Hu 2021](https://www.bostonreview.net/articles/race-policing-and-the-limits-of-social-science/)
+- Complete **prior to Jan. 21** class: [LSWR Chapter 5.7](https://learningstatisticswithr.com/lsr-0.6.pdf)
 
 Lectures:
 
@@ -188,8 +188,8 @@ Objectives
 Readings: 
 
 - **Complete prior to 2/27 class:** [LSWR Chapter 16.2](https://learningstatisticswithr.com/lsr-0.6.pdf)
-- **Complete prior to 3/7 class:** [Campbell & Ramey 1994](./data/Campbell Ramey 1994.pdf)
-    + Reading questions: [doc](./data/Campbell Ramey reading questions.docx)
+- **Complete prior to 3/7 class:** [McIntosh et al. 2021](./data/McIntosh et al 2021.pdf.pdf)
+    + Reading questions: <!-- [doc](./data/Campbell Ramey reading questions.docx) -->
 
 Lecture: 
 
