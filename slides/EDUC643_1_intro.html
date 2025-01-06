@@ -89,7 +89,7 @@ Concrete learning objectives:
 4. Describe the assumptions of least-squares regression analysis and test analytic models for the extent to which they satisfy these assumptions
 5. Generalize the least-squares regression model (conceptually and in practice) to predictors that are categorical, interacted and non-linear
 6. Build taxonomies of sensible regression models in response to independently developed research questions
-7. Use an open-source, object-oriented statistical programming language to conduct all such analyses
+7. Use an open-source, object-oriented statistical programming language (specifically R) to conduct all such analyses
 ]
 
 ---
@@ -130,16 +130,14 @@ Concrete learning objectives:
 ---
 # Learnings from the fall
 
-- Maintain inclusivity, clarity, communuication, organization and accessibility
+- Maintain inclusivity, support, clarity, communuication, relevance, organization and accessibility
 - Improve active learning (also more "chew time") and accessibility
-- Clarity in use of technical language
-- Review topics on which students struggled in assignments
+- Clarity in use of technical language (and its nuances)
+- Review topics on which students struggled in assignments; make more explicit what about an assignment response does not meet expectations
 
 --
+- 81% response rate on SES 😍 [everyone gets a free percentage point!!]
 
-.gray[
-- Match structure of final to assignments
-]
 
 ---
 # Roadmap of EDUC 643
@@ -391,7 +389,7 @@ Before we get to the core question of the Kelly et al. study--how are dietary re
 ---
 # Bivariate relationships
 
-We are interested in the *relationship* between dietary restraint (*EDEQ_restraint*) and body-mass index (*BMI*). Statistically, the relationship is the same regardless of which variable is the outcome.
+We are interested in the *relationship* between dietary restraint (*EDEQ_restraint*) and body-mass index (*BMI*). Statistically, the relationship is the same regardless of which variable is the "outcome."
 
 .pull-left[
 &lt;img src="EDUC643_1_intro_files/figure-html/unnamed-chunk-11-1.svg" style="display: block; margin: auto;" /&gt;
@@ -432,6 +430,7 @@ biv &lt;- ggplot(data=do, aes(x=EDEQ_restraint, y=BMI)) +
 ## Bivariate relationships: Direction
 
 &lt;img src="EDUC643_1_intro_files/figure-html/unnamed-chunk-15-1.svg" style="display: block; margin: auto;" /&gt;
+
 ---
 ## Bivariate relationships: Linearity
 
@@ -448,6 +447,7 @@ biv &lt;- ggplot(data=do, aes(x=EDEQ_restraint, y=BMI)) +
 &lt;img src="EDUC643_1_intro_files/figure-html/unnamed-chunk-18-1.svg" style="display: block; margin: auto;" /&gt;
 
 **Note that these have the same slope (magnitude)**
+
 ---
 ## Bivariate relationships: Magnitude
 
@@ -468,6 +468,7 @@ Note that if you change the scale of either axis, it will change the perceived--
 .blue[So what can we say with respect to these five characteristics in our data?]
 
 &lt;img src="EDUC643_1_intro_files/figure-html/unnamed-chunk-21-1.svg" style="display: block; margin: auto;" /&gt;
+
 ---
 # A line through our cloud
 
