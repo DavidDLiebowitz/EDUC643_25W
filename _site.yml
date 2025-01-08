@@ -13,7 +13,7 @@ navbar:
       - text: "1. Intro and bivariate relationships"
         href: ./slides/EDUC643_1_intro.html
       - text: "2. GLM"
-        #href: ./slides/EDUC643_2_GLM.html
+        href: ./slides/EDUC643_2_GLM.html
       - text: "3. Regression inference"
         #href: ./slides/EDUC643_3_inference.html
       - text: "4. Correlation...and causality"

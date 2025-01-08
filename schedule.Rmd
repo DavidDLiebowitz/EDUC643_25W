@@ -38,9 +38,9 @@ Readings:
 
 Lectures:
 
-- Class 1 (1/9) slides: [html](./slides/EDUC643_1_intro.html) | [pdf](./slides/EDUC643_1_intro.pdf)
+- Class 1 (1/7) slides: [html](./slides/EDUC643_1_intro.html) | [pdf](./slides/EDUC643_1_intro.pdf)
+- Class 2 (1/9) slides: [html](./slides/EDUC643_2_GLM.html) | [pdf](./slides/EDUC643_2_GLM.pdf)
 <!--
-- Class 2 (1/11) slides: [html](./slides/EDUC643_2_GLM.html) | [pdf](./slides/EDUC643_2_GLM.pdf)
 - Class 3 (1/18) slides: [html](./slides/EDUC643_3_inference.html) | [pdf](./slides/EDUC643_3_inference.pdf)
 - Class 4 (1/23) slides: [html](./slides/EDUC643_4_correlation.html) | [pdf](./slides/EDUC643_4_correlation.pdf)
 -->
