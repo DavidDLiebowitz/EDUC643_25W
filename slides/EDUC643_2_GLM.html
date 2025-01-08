@@ -284,7 +284,7 @@ However, omitted variables often introduce bias into our estimates of the relati
 ---
 # Residual (error) term
 
-In a regression model, all the variability that we can't explain with our predictor(s) is condensed into a .green[residual term] `\(\color{green}{\varepsilon}\)`.
+In a regression model, all the variability that we can't explain with our predictor(s) is condensed into a .green[residual term] (often represented by the Greek letter epsilon, `\(\color{green}{\varepsilon}\)`).
 
 &lt;img src="EDUC643_2_GLM_files/figure-html/unnamed-chunk-9-1.svg" style="display: block; margin: auto;" /&gt;
 
@@ -407,10 +407,12 @@ The regression line on the left is a better fit because the sum of its squared e
 SSR is a bigger concept than just model predictions. It is a way of thinking about variability.
 
 --
-Our outcome's variability is simply the sum of squared deviations from its mean, aka the .red-pink[**sum of the squares (SS)**].
+Our outcome's variability is simply the sum of squared deviations from its mean, aka the .red-pink[**sum of the squares (SS)**].&lt;sup&gt;1&lt;/sup&gt;
 
 `$$\color{pink}{SS_\text{BMI}} = \sum{(Y_i - \bar{Y})^2}$$`
 &lt;img src="EDUC643_2_GLM_files/figure-html/unnamed-chunk-16-1.svg" style="display: block; margin: auto;" /&gt;
+
+.footnote[.small[[1] Note that this is a univariate statistic that depends only on the variability of BMI.]]
 
 ---
 
@@ -432,10 +434,13 @@ Remember our goal with OLS regression is to find the model coefficients that min
 # Partitioning variance
 `$$\text{If } \color{pink}{SS_\text{BMI}} = \color{purple}{SS_\text{Model}} + {SS_\text{Residual}}$$`
 
-`\(\color{purple}{SS_\text{Model}}\)` is the sum of squared deviations between the model predicted values `\((\hat{Y})\)` and the mean `\((\bar{Y})\)`.
+`\(\color{purple}{SS_\text{Model}}\)` is the sum of squared deviations between the model predicted values `\((\hat{Y})\)` and the mean `\((\bar{Y})\)`. Let's visualize this for a set of 30 participants:
+
+--
 
 &lt;img src="EDUC643_2_GLM_files/figure-html/unnamed-chunk-17-1.svg" style="display: block; margin: auto;" /&gt;
 `$$\color{purple}{SS_\text{Model} = \sum{(\hat{Y} - \bar{Y})^2}}$$`
+
 ---
 # Partitioning variance
 `$$\text{If } \color{pink}{SS_\text{BMI}} = \color{purple}{SS_\text{Model}} + \color{green}{SS_\text{Residual}}$$`
@@ -510,8 +515,6 @@ class: middle, inverse
 
 ### Review: 
 - Review EDUC 641, Unit 4 (Lectures 13 - 16)
-
-
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

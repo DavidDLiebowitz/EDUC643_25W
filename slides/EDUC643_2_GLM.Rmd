@@ -377,7 +377,7 @@ However, omitted variables often introduce bias into our estimates of the relati
 ---
 # Residual (error) term
 
-In a regression model, all the variability that we can't explain with our predictor(s) is condensed into a .green[residual term] $\color{green}{\varepsilon}$.
+In a regression model, all the variability that we can't explain with our predictor(s) is condensed into a .green[residual term] (often represented by the Greek letter epsilon, $\color{green}{\varepsilon}$).
 
 ```{r, echo = F, fig.height = 4, fig.width = 7}
 fit <- lm(BMI ~ EDEQ_restraint, data=do)
@@ -556,10 +556,10 @@ The regression line on the left is a better fit because the sum of its squared e
 SSR is a bigger concept than just model predictions. It is a way of thinking about variability.
 
 --
-Our outcome's variability is simply the sum of squared deviations from its mean, aka the .red-pink[**sum of the squares (SS)**].
+Our outcome's variability is simply the sum of squared deviations from its mean, aka the .red-pink[**sum of the squares (SS)**].<sup>1</sup>
 
 $$\color{pink}{SS_\text{BMI}} = \sum{(Y_i - \bar{Y})^2}$$
-```{r, fig.height = 3.75, fig.width = 6, echo = F}
+```{r, fig.height = 3.25, fig.width = 6, echo = F}
 do <- do %>% 
   mutate(mean_bmi = mean(BMI))
 
@@ -570,6 +570,7 @@ ssr_plot <- do %>%
   geom_point() + 
   geom_hline(aes(yintercept=mean(do$BMI)), col = "pink", alpha=0.8, size=0.8) +
   annotate('text', x=5, y=24, label="Mean BMI", col = "pink") +
+  annotate('text', x=5.75, y=32, label="Best fit", col="blue", size=3) +
   geom_segment(aes(xend = EDEQ_restraint, yend=mean_bmi), col = "pink", alpha = 0.5) +
   geom_smooth(aes(EDEQ_restraint, BMI), method='lm', linetype="dashed", se=F, alpha=0.3, size=0.2) +
   theme_minimal(base_size = 16)
@@ -577,6 +578,8 @@ ssr_plot <- do %>%
 ssr_plot
 
 ```
+
+.footnote[.small[[1] Note that this is a univariate statistic that depends only on the variability of BMI.]]
 
 ---
 
@@ -598,7 +601,9 @@ Remember our goal with OLS regression is to find the model coefficients that min
 # Partitioning variance
 $$\text{If } \color{pink}{SS_\text{BMI}} = \color{purple}{SS_\text{Model}} + {SS_\text{Residual}}$$
 
-$\color{purple}{SS_\text{Model}}$ is the sum of squared deviations between the model predicted values $(\hat{Y})$ and the mean $(\bar{Y})$.
+$\color{purple}{SS_\text{Model}}$ is the sum of squared deviations between the model predicted values $(\hat{Y})$ and the mean $(\bar{Y})$. Let's visualize this for a set of 30 participants:
+
+--
 
 ```{r, echo = F, fig.height = 3.75, fig.width=6}
 do <- do %>% 
@@ -616,6 +621,7 @@ do %>%
 
 ```
 $$\color{purple}{SS_\text{Model} = \sum{(\hat{Y} - \bar{Y})^2}}$$
+
 ---
 # Partitioning variance
 $$\text{If } \color{pink}{SS_\text{BMI}} = \color{purple}{SS_\text{Model}} + \color{green}{SS_\text{Residual}}$$
@@ -705,6 +711,4 @@ class: middle, inverse
 
 ### Review: 
 - Review EDUC 641, Unit 4 (Lectures 13 - 16)
-
-
 
