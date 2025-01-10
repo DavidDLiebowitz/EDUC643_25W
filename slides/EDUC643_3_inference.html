@@ -653,7 +653,8 @@ Our omnibus test is significant at an `\(\alpha\)`-threshold of 0.05 `\((p &lt; 
 ```r
 modelsummary(fit, stars=T,
   gof_omit = "Adj.|AIC|BIC|Log",
-  coef_rename = c("EDEQ_restraint" = "Dietary Restraint Index (0-6)"))
+  coef_rename = c("EDEQ_restraint" = "Dietary Restraint Index (0-6)"),
+  escape=F) # &lt;- necessary for html, but don't need this for Word
 ```
 
 &lt;table style="NAborder-bottom: 0; width: auto !important; margin-left: auto; margin-right: auto;" class="table"&gt;
@@ -784,15 +785,15 @@ class: middle, inverse
 
 ### Reading: 
 - **If you have not already**: LSWR Chapter 15.1 - 15.2 and 15.4 - 15.7 and Hu (2021)
-- **By January 30 class**: LSWR Chapter 5.7
+- **By January 21 class**: LSWR Chapter 5.7
 
 ### Quiz: 
-- TBD
+- Opens Jan. 21st
 
 ### Assignment 1:
 - Now live
 - Have all information you need to complete parts 1 &amp; 2
-- Due TBD
+- Due Feb. 3
 
 
     </textarea>
