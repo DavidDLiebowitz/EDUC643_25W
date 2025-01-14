@@ -77,7 +77,7 @@ Lecture:
 - Data: [male_do_eating.sav](./data/male_do_eating.sav)
 - R code: [R script](./slides/EDUC643_5_code.R) -->
 - Labs: 
-    + Week 3: [doc](./labs/EDUC643_Wk3.Rmd) | [RMarkdown assignment template](./labs/formatted_rmd_starter.Rmd)
+    + Week 3: [rmd](./labs/EDUC643_Wk3.Rmd) | [RMarkdown assignment template](./labs/formatted_rmd_starter.Rmd)
 
 
 Assignment 1:
