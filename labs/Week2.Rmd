@@ -1,0 +1,95 @@
+---
+title: "Week 2 Lab"
+author: "(add your name)"
+date: "1/13/2023"
+output: 
+ html_document:
+     code_folding: hide
+---
+
+```{r setup, include=FALSE}
+# Don't make a change here
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+**In this lab, we explore the relationship between the age at which a student gets a mentor (mentee_age) and their high school GPA (gpa). You will provide summary statistics for the data and plot the bi-variate relationship.** 
+
+### Task 1: Load the libraries and read the data
+
+#### load libraries
+
+```{r}
+# For this lab, you will need the following libraries: 
+# tidyverse, modelsummary
+# load them in your environment by completing the blanks
+# Remember to uncomment (remove the hash) to run the code
+# use install.packages("package_name") if you don't have these packages
+
+#library(.......)
+#....
+#....
+```
+
+#### read data 
+
+```{r}
+# Saving the data in an object
+
+# mentor_gpa <- read.csv("https://daviddliebowitz.github.io/EDUC641_24F/data/ah02.csv")
+# %>% 
+# select(id, mentee_age, gpa)
+
+
+# Print the head of the data
+# Print the str of the data
+
+# head(...)
+# ....
+```
+
+### Task 2: Descriptive statistics
+
+```{r}
+
+# Using the datasummary_skim() function from the modelsummary package provide some descriptive statistics for the variables - mentee_age and gpa
+# Use the mean(), sd(), summary() functions
+
+# .....
+# .....
+ 
+```
+
+
+### Task 3: Bi-variate Relationship
+
+We are interested in how the age at which students gets assigned a mentor (mentee_age) predicts their high school GPA (gpa), on average?
+
+**Q1. What is the predictor and outcome variables here?**
+
+*<Enter answer here>*
+
+#### Plot the bivariate relationship
+
+```{r}
+# Make a bivariate plot. Fill what should be on the x and y-axis.
+# And give a meaningful title
+# Hint - put the outcome on y axis and predictor on x axis
+
+# lm_plot <- ggplot(data=mentor_gpa, aes(x= ....., y= .....)) + 
+#               geom_point() +
+#               labs(
+#               x = "",
+#               y = "",
+#               title = "") +
+#               theme_minimal(base_size = 16) +
+#               geom_smooth(method='lm', se=F)
+
+# lm_plot
+```
+
+**Q2. Write 1-2 sentences to interpret this visualized relationship, relying on the five features of bivariate relationships we introduced in class (direction, linearity, outliers, strength, and magnitude).**
+
+*<Enter answer here>*
+

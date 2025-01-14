@@ -740,6 +740,7 @@ Traditional approach:
 
 - Value selected for starter and proportion of 0s in your data can results in wildly inconsistent coefficient estimates
 - You'll address this issue in EDUC 645 with Poisson regression
+    - Can also (potentially) be addressed with an inverse hyperbolic sine transformation
 
 ---
 ```{r, fig.height=5}

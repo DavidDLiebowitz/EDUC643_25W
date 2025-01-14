@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE,
                       message = FALSE)
 
-# wload libraries
+# load libraries
 library(modelsummary)
 
 # read data
