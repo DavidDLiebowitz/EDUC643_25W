@@ -41,9 +41,8 @@ Lectures:
 - Class 1 (1/7) slides: [html](./slides/EDUC643_1_intro.html) | [pdf](./slides/EDUC643_1_intro.pdf)
 - Class 2 (1/9) slides: [html](./slides/EDUC643_2_GLM.html) | [pdf](./slides/EDUC643_2_GLM.pdf)
 - Class 3 (1/14) slides: [html](./slides/EDUC643_3_inference.html) | [pdf](./slides/EDUC643_3_inference.pdf)
-<!--
 - Class 4 (1/16) slides: [html](./slides/EDUC643_4_correlation.html) | [pdf](./slides/EDUC643_4_correlation.pdf)
--->
+
 - Data: [male_do_eating.sav](./data/male_do_eating.sav) | [codebook](./data/male_do_eating_codebook.pdf)
 - R code: [R script](./slides/EDUC643_1_code.R)
 - Labs:

@@ -225,11 +225,14 @@ For fun, multiply that 0.2241 by itself: $(0.2241)^2 = 0.0502$. .blue[**Anything
 # $r$ and $R^2$
 
 $$r = \sqrt{R^2}$$
+
+--
+
 The coefficient on the regression of two standardized variables is called the .red-pink[**Pearson product-moment coefficient**]. It is the same as the .red-pink[**Pearson product-moment correlation**] (otherwise known as Pearson correlation). And it is the square root of the $R^2$. 
 
 Correlation coefficient values range from -1 to 1
-  + Positive Values: higher values of Y $\rightarrow$ higher values of X (and vice-versa)
-  + Negative Values: higher values of Y $\rightarrow$ lower values of X (and vice-versa)
+  + Positive Values: higher values of Y tend to have higher values of X (and vice-versa)
+  + Negative Values: higher values of Y tend to have lower values of X (and vice-versa)
 
 --
 
@@ -371,7 +374,7 @@ Common barriers in attributing causality to observed co-relationships include:
 - .blue[Confounders]: a third variable causes changes in X and also in Y
 - [Colliders](http://www.the100.ci/2017/03/14/that-one-weird-third-variable-problem-nobody-ever-mentions-conditioning-on-a-collider/): a third variable that is caused by both the predictor and outcome; controlling for this can make a true causal relationship disappear!
 - .blue[Reverse causation]: X may cause Y **or** Y may cause X
-- [Simpson's Paradox](https://daviddliebowitz.github.io/EDUC643_W24/slides/EDUC643_4_correlation.html#45): a third variable may reverse the correlation
+- [Simpson's Paradox](https://daviddliebowitz.github.io/EDUC643_25W/slides/EDUC643_4_correlation.html#46): a third variable may reverse the correlation
 - .blue[Selection bias]: due to the way in which the sample was constructed, observed relationships (or lack thereof) mask the true underlying relationship.
 - Also, **lack** of correlation $\neq$ **lack** of causality
 
@@ -458,7 +461,7 @@ Highest priority is establishing .red-pink[**exogeneous variation**] in exposure
 
 --
 
-Research design is critical. So too can be [Directed Acyclical Graphs (DAGs)](https://journals.sagepub.com/doi/pdf/10.1177/2515245917745629). We have whole classes dedicated to just this topic (EDLD 650, EDLD 679).
+Research design is critical. So too can be [Directed Acyclical Graphs (DAGs)](https://journals.sagepub.com/doi/pdf/10.1177/2515245917745629) in understanding the role confounders and colliders in causal relationship. We have whole classes dedicated to just this topic (EDLD 650, EDLD 679).
 
 
 
@@ -539,13 +542,13 @@ class: middle, inverse
 # To-Dos
 
 ### Reading: 
-- **By January 25**: LSWR Chapter 5.7
+- **By January 21**: LSWR Chapter 5.7
 
-### Quiz: 
-- Opens 3:45 Tuesday, Jan. 25 (closes 5pm on 1/26)
+### Quiz #1: 
+- Opens now (closes 5pm on 1/22)
 
 ### Assignment 1:
-- Due February 5, 11:59pm
+- Due February 3, 11:59pm
 
 ### Next time: Regression assumptions
 
