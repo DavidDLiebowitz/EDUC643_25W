@@ -2,7 +2,7 @@
 # Estimating bivariate relationship and check assumptions
 ## Created by: David Liebowitz
 ### First created: 12/15/22
-### Last update: 1/25/24
+### Last update: 1/17/25
 ### inputs: male_do_eating.sav
 ######################################################
 
@@ -88,7 +88,7 @@ ggplot(do, aes(x = resid)) +
 # via Q-Q plot
 ggplot(do) + 
   stat_qq(aes(sample=stu_resid)) +
-  geom_abline(color=blue) +
+  geom_abline(color='blue') +
   theme_minimal(base_size = 16)
 
 
@@ -103,7 +103,7 @@ modelsummary(fit,
              coef_rename = c("EDEQ_restraint" = "Dietary Restraint Index (0-6)"),
              vcov =  list("iid", "robust"))
 
-### Going to create artifical clusters:
+### Going to create artificial clusters:
 do <- do %>% mutate(city = case_when(predict<=25 & stu_resid>0 ~ "San Francisco",
                                      predict<=25 & stu_resid<=0 ~ "Portland",
                                      predict >25 & predict <=28 & stu_resid>0 ~ "Seattle",
