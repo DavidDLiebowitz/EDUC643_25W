@@ -2,7 +2,7 @@
 # Multiple regression
 ## Created by: David Liebowitz
 ### First created: 1/23/23
-### Last update: 1/31/24
+### Last update: 1/24/25
 ### inputs: male_do_eating.sav
 ######################################################
 
@@ -171,7 +171,8 @@ modelsummary(list(fit, fit2),
              stars=T,
              gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE",
              coef_rename = c("EDEQ_restraint" = "Dietary Restraint Index (0-6)"),
-             add_rows = row) # <- with the added row 
+             add_rows = row,   # <- with the added row
+             escape=F)  
 
 
 
@@ -231,7 +232,8 @@ cordat$Income = as.numeric(as.character(cordat$Income))
 #Produce the correlation matrix
 datasummary_correlation(cordat,
                         fmt = 3,
-                        notes = "Notes: cells report Pearson correlation coefficients.")
+                        notes = "Notes: cells report Pearson correlation coefficients.",
+                        escape=F)
 
 ### Don't expect you to know how to do this ####
 # Can also produce a heat map
@@ -241,7 +243,7 @@ cormat <- round(cor(cordat),3)
 cormat[upper.tri(cormat)] <- NA
 
 # The melt command is a quick way to reshape the data from wide-to-long, which is necessary here
-melt_corm <- data.table::melt(cormat, na.rm=T)
+melt_corm <- reshape2::melt(cormat, na.rm=T)
 ggplot(data = melt_corm, aes(Var2, Var1, fill = value))+
   geom_tile(color = "white")+
   scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
