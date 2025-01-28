@@ -201,7 +201,7 @@ summary(fit)
 ---
 # Regression diagnostics
 
-We've looked a little already at the normality and linearity of our relationship. .blue[*What else can we look at?*] 
+We've looked a little already at the linearity of our relationship and the homoscedasticity of our residuals. .blue[*What else can we look at?*] 
 
 How can we test for homoscedasticity, linearity and normality in our residuals?
 
@@ -1195,6 +1195,9 @@ class: middle, inverse
 
 ### Reading: 
 - **Finish by Feb. 6**: LSWR Chapter 15.3
+
+### Quiz 2
+- Open now. **Finish by 1/29 at 5pm**
 
 ### Assignment 2:
 - Due Feb 14., 11:59pm
