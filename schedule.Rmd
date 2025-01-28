@@ -111,6 +111,8 @@ Lecture:
 - Data: [male_do_eating.sav](./data/male_do_eating.sav)
 - R code: [R script](./slides/EDUC643_7_code.R)
 - Prototypical plots: [xlsx](./data/prototypical_plots.xlsx)
+- Labs:
+    + Week 4: [doc](./labs/EDUC643_Wk4.docx)
  
 Assignment 2: 
 
