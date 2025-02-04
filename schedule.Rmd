@@ -117,11 +117,8 @@ Lecture:
 Assignment 2: 
 
 - Due: Feb. 14, 11:59pm
-
-<!--
 - Assignment: [html file](./assignments/assignment_3.html)
 - Data: [nerds.csv](./data/nerds.csv)
--->
  
 ## Unit 4: Categorical predictors
 
