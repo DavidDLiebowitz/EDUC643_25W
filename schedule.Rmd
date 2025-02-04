@@ -113,6 +113,7 @@ Lecture:
 - Prototypical plots: [xlsx](./data/prototypical_plots.xlsx)
 - Labs:
     + Week 4: [doc](./labs/EDUC643_Wk4.docx)
+    + Week 5: [.Rmd](./labs/Week5.Rmd)
  
 Assignment 2: 
 

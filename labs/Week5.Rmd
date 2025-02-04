@@ -1,0 +1,204 @@
+---
+title: "Week 5 Lab"
+author: "(add your name)"
+date: "2/4/2025"
+output: 
+ html_document:
+     code_folding: hide
+---
+
+#### Task 1: Set up
+
+```{r setup, include=FALSE}
+# Change eval = TRUE before running
+knitr::opts_chunk$set(include = TRUE,
+                      echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      eval = FALSE)
+```
+
+```{r}
+#Load libraries
+library(haven)
+library(tidyverse)
+library(modelsummary)
+library(here)
+```
+
+-   Read in the datasets
+
+```{r}
+# Read the data
+df0 <- read_sav("https://daviddliebowitz.github.io/EDUC643_23W/data/male_do_eating.sav")
+
+# You can look at the variables and their types using this function
+glimpse(df0)
+
+## Variables that have <dbl + lbl> are factors. To see what each variable mean, 
+## you can use the following code
+
+attr(df0$MBAS_muscularity, 'label')
+
+## To see what different values in a <dbl + lbl> column mean you can use
+## the following code
+
+attr(df0$education_group, 'labels')
+attr(df0$income_group, 'labels')
+attr(df0$updated_race_group, 'labels')
+
+## You can also convert the columns to factor for values that are categorical
+
+df0 <- as_factor(df0)
+```
+
+For this lab, we will focus on only continuous predictors. Let's subset to the relevant continuous predictors. There are many subscales and we'll select the total on those scales.
+
+```{r}
+df0 <- df0 %>%
+  select(Study_ID, BMI, age_year, EDEQ_restraint, DERS_total, DMS_mean, EDS_total, 
+         SATAQ_total) %>%
+  mutate(EDS_total = ifelse(EDS_total == -99, NA, EDS_total)) %>%
+  drop_na()
+```
+
+**Research Question: What is the relationship between BMI and Dietary Restraint Index, after controlling for person-level covariates?**
+
+**Q1. Write the null and alternate hypothesis**
+
+*H0: There is no relationship between ...*
+
+*H1: There is a relationship between ...*
+
+In this analysis, two key variables, BMI and EDEQ_restraint. First, let's plot a relationship without any covariates.
+
+#### Task 2: Summarize the bivariate relationship between BMI and Directory restraint index (EDEQ_restraint)
+
+-   Visualize the bivariate relationship
+
+```{r}
+# Replace x with the predictor variable and y with the outcome variable.
+
+# ggplot(df0, aes(x = ..., y = ...)) +
+#   geom_point(color = "grey60") +
+#   geom_smooth(method = "lm", color = "#de6386") +
+#   labs( y = "BMI",
+#         x = "EDEQ_restraint") +
+#   theme_bw()
+```
+
+**Q2. What do you think about the relationship?**
+
+*Direction:*
+
+*Linearity:*
+
+*Strength:*
+
+*Magnitude:*
+
+*Outliers:*
+
+Let's add covariates.
+
+#### Task 3: Produce a correlation matrix and heatmap to assess for potential multicollinearity
+
+-   Correlation matrix
+
+```{r}
+# Write the name of your dataset instead of the dots.
+
+# datasummary_correlation(...,
+#                         fmt = 3,
+#                         notes = "Notes: cells report Pearson correlation coefficients.")
+```
+
+-   Easy correlation heatmap
+
+```{r}
+## Save correlations in a matrix using the cor() function
+## Here I', removing the first column as that corresponds to the Study_id df0[,-1] 
+cormat <- round(cor(df0[,-1]),3)
+cormat
+## We can use the corrplot package
+
+#install.packages("corrplot")
+corrplot::corrplot(cormat)
+```
+
+```{r}
+## More complex using ggplot
+cormat_df <- cormat %>%
+  as.data.frame() %>%
+  rownames_to_column(var = "Variable1") %>%
+  pivot_longer(cols = -Variable1,
+               names_to = "Variable2",
+               values_to = "correlation")
+
+ggplot(cormat_df, aes(Variable2, Variable1, fill = correlation)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient2(low = "#4a969e", high = "#d15e81", mid = "white",
+                       midpoint = 0, limit = c(-1,1), space = "Lab",
+                       name="Pearson\nCorrelation") +
+  labs(x = "", y = "") +
+  theme_minimal(base_size = 10)
+```
+
+**Q3. Consider the correlations and assess for potential multicollinearity issues and decide which covariates you will select for your postulated model.**
+
+*Answer here*
+
+#### Task 4 - Multiple Regression
+
+Add age as a covariate and choose others per your decision to see if relationship between BMI and Directory restraint index (EDEQ_restraint) changes.
+
+-   Write a formal multiple regression model
+
+$$ BMI = \beta_0 + \beta_1 * EDEQ + \beta_2 * AGE + ... + \epsilon $$.
+
+**Q4. Interpret** $\beta_1$ coefficient.
+
+*Adjusting for ......, we estimate a predicted change in ..... of ..... with a one unit change in .....*
+
+```{r}
+# Run the model
+# model <- lm(outcome_var ~ predictor_var + covariate1 + covariate2 +..., df0)
+
+# Make a table to show the model
+# Replace the dots with the model name
+
+# modelsummary(...,
+#              estimate = "{estimate}{stars}[{conf.low}, {conf.high}]",
+#              gof_omit = "Adj.|Log.Lik.|AIC|BIC|RMSE",
+#              coef_rename = c('EDEQ_restraint' = 'Dietary restraint',
+#                              'age_year' = 'Age'))
+```
+
+-   Make a prototypical plot
+
+Let's visualize the relationship at different ages
+
+```{r}
+# Select 3 age groups you want to show on the plot.
+summary(df0$age_year)
+
+```
+
+```{r}
+# To make the prototypical plot, we will use the margins package
+
+# install.packages("margins")
+
+# This gives the predicted values at different points in the age. 
+# In age_year = c(...) write the 3 ages you want to depict
+
+# margins::margins(model, at = list(age_year = c(...))) %>% 
+#   ggplot(aes(x = EDEQ_restraint, 
+#              y = fitted, 
+#              color = as.factor(age_year))) +
+#   geom_smooth(method = 'lm', se = F) +
+#   labs( y = "BMI",
+#         x = "EDEQ_restraint",
+#         color = "Age")+
+#   theme_bw()
+```
