@@ -113,7 +113,7 @@ Lecture:
 - Prototypical plots: [xlsx](./data/prototypical_plots.xlsx)
 - Labs:
     + Week 4: [doc](./labs/EDUC643_Wk4.docx)
-    + Week 5: [.Rmd](./labs/Week5.Rmd)
+    + Week 5: [Rmd](./labs/Week5.Rmd)
  
 Assignment 2: 
 
@@ -140,14 +140,14 @@ Objectives
 
 Readings: 
 
-- [LSWR Chapter 14 and 16.6](https://learningstatisticswithr.com/lsr-0.6.pdf) 
+- Complete **prior to Feb. 18** class: [LSWR Chapter 14 and 16.6](https://learningstatisticswithr.com/lsr-0.6.pdf) 
 
 Lecture: 
 
-<!--
-- Class 10 - 12 (2/13,  2/15 and 2/20) slides: [html](./slides/EDUC643_10_categorical.html) | [pdf](./slides/EDUC643_10_categorical.pdf)
+- Class 10 - 12 (2/6,  2/11 and 2/13) slides: [html](./slides/EDUC643_10_categorical.html) | [pdf](./slides/EDUC643_10_categorical.pdf)
 - Data: [dibels.csv](./data/dibels.csv) | [codebook](./data/dibels_codebook.pdf)
 - R code: [R script](./slides/EDUC643_10_code.R)
+<!--
 - Labs:
     + Week 6: [doc](./labs/EDUC643_Wk6.docx)
     + Week 7: [doc](./labs/EDUC643_Wk7.docx)

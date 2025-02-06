@@ -2,7 +2,7 @@
 # Categorical predictors
 ## Created by: David Liebowitz
 ### First created: 2/1/23
-### Last update: 2/13/24
+### Last update: 2/6/25
 ### inputs: dibels.csv
 ######################################################
 
@@ -150,7 +150,7 @@ summary(fit3)
 # I can specify directly in my call which group to serve as reference
 summary(lm(mean_orf ~ relevel(period, ref="y2_boy"), data=dibels_long))
 
-# Note that you can also do this by releveling the actual variable
+# Note that you can also do this by re-leveling the actual variable
 
 ## Bonferroni correction for multiple hypothesis testing
 pairwise.t.test(dibels_long$mean_orf, dibels_long$period,
@@ -192,6 +192,7 @@ anova(fit3, fit4)
 # Show the pre/post and multi-wave estimates
 modelsummary(list(fit1, fit3),
              stars=T,
+             escape=F,
              vcov = "robust",
              gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
              coef_rename = c("post" = "Post-Pandemic Onset", 
@@ -247,6 +248,7 @@ ggplot(data=df3, aes(x=school_enroll, y=fitted,color=period)) +
 # Show all coefficients
 modelsummary(list(fit3, fit4),
              stars=T,
+             escape=F,
              vcov = "robust",
              gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
              coef_rename = c("periody1_moy" = "Winter 2020",
@@ -269,6 +271,7 @@ attr(row, 'position') <- c(9)
 # Re-generate the table
 modelsummary(list(fit3, fit4),
              stars=T,
+             escape=F,
              vcov = "robust",
              gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
              coef_omit = "grade|school_enroll",

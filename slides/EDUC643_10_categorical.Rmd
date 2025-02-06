@@ -153,7 +153,7 @@ include_graphics("dibels_team.png")
 
 .small[Ann Swindells Professor in Special Education [Gina Biancarosa](https://education.uoregon.edu/directory/faculty/all/ginab), former UO doctoral students David Fainstein, Chris Ives, and Dave Furjanic, along with CTL Research Manager Patrick Kennedy, used data from assessments of 471,456 students across 1,684 schools on the Dynamic Indicators of Basic Early Literacy Skills (DIBELS) to analyze the extent to which students' Oral Reading Fluency (ORF) scores differed across four waves of DIBELS assessment prior-to and during the pandemic.]
 
-.small[Their study is forthcoming at the *Elementary School Journal*.]
+.small[Their study is published in [*The Elementary School Journal*](https://www.journals.uchicago.edu/doi/full/10.1086/730115).]
 
 .footnote[[1] For various reasons, the pandemic is a ["lousy natural experiment"](https://www.educationnext.org/covid-19-pandemic-lousy-natural-experiment-for-studying-the-effects-online-learning/) for examining the effects of a particular policy response (e.g, virtual schooling). However, it is quite possible to seek to understand its global effects via just the type of analysis Furjanic et al. conducted.]
 
@@ -564,7 +564,7 @@ $$Y = \beta_0 + \beta_1 D_1 + \beta_2 D_2 + \beta_3 D_3+...+ \varepsilon$$
 In our four-wave ORF regression, we can think of the equation like this:<sup>1</sup>
 
 $$MEAN\_ORF_j = \beta_0 + \beta_1 Y1\_MOY_j + \beta_2 Y2\_BOY_j + \beta_3 Y2\_MOY_j + \varepsilon_j$$
-.footnote[[1] Following convention, I'm subscripting this equation with "*j*" because our data does not represent individual observations (which we typically subscript with "*i*"), but mean values, aggregate at the school-grade level.]
+.footnote[[1] Following convention, I'm subscripting this equation with "*j*" because our data does not represent individual observations (which we typically subscript with "*i*"), but mean values, aggregated at the school-grade level.]
 
 --
 .blue[**where did *Y1_BOY* (year 1, beginning of year) go?**]
@@ -1138,6 +1138,7 @@ modelsummary(list(fit1, fit3),
 ```{r, echo=F}
 modelsummary(list(fit1, fit3),
             stars=T,
+            escape = F,
             vcov = "robust",
             gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
             coef_rename = c("post" = "Post-Pandemic Onset", 
@@ -1324,6 +1325,7 @@ proto
 ```{r, echo=T, results=F}
 modelsummary(list(fit3, fit4),
             stars=T,
+            escape=F,
             vcov = "robust",
             gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
             coef_rename = c("periody1_moy" = "Winter 2020",
@@ -1341,6 +1343,7 @@ modelsummary(list(fit3, fit4),
 ```{r}
 modelsummary(list(fit3, fit4),
             stars=T,
+            escape=F,
             vcov = "robust",
             gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
             coef_rename = c("periody1_moy" = "Winter 2020",
@@ -1362,6 +1365,7 @@ row <- tribble(~term, ~Bivariate, ~Multivariate,
 attr(row, 'position') <- c(9)
 modelsummary(list(fit3, fit4),
             stars=T,
+            escape=F,
             vcov = "robust",
             gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
             coef_omit = "grade|school_enroll",
@@ -1377,6 +1381,7 @@ modelsummary(list(fit3, fit4),
 # Putting into words
 
 > 
+
 ---
 class: middle, inverse
 
@@ -1476,13 +1481,13 @@ class: middle, inverse
 # To-Dos
 
 ### Reading: 
-- **Finish by Feb. 20**: LSWR Chapter 14 and 16.6
+- **Finish by Feb. 18**: LSWR Chapter 14 and 16.6
 
 ### Assignment 2:
-- Due Feb. 16, 11:59pm
+- Due Feb. 14, 11:59pm
 
 ### Assignment 3:
-- Due Feb. 26, 11:59pm
+- Due Feb. 24, 11:59pm
 
 
 ---
