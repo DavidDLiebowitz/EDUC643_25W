@@ -147,9 +147,10 @@ Lecture:
 - Class 10 - 12 (2/6,  2/11 and 2/13) slides: [html](./slides/EDUC643_10_categorical.html) | [pdf](./slides/EDUC643_10_categorical.pdf)
 - Data: [dibels.csv](./data/dibels.csv) | [codebook](./data/dibels_codebook.pdf)
 - R code: [R script](./slides/EDUC643_10_code.R)
-<!--
 - Labs:
     + Week 6: [doc](./labs/EDUC643_Wk6.docx)
+    
+<!--
     + Week 7: [doc](./labs/EDUC643_Wk7.docx)
 -->
 
