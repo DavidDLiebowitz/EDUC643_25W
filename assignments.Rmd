@@ -90,10 +90,10 @@ Objectives of this assignment:
 
 Deadline: Feb. 24, 11:59pm
 
-<!--
+
 Download: [html file](./assignments/assignment_4.html) | [nerds dataset](./data/nerds.csv)
 
- Key: [doc file](./assignments/keys/assignment_3_key.docx) | [R script](./assignments/keys/assignment_3_key.R) -->
+<!-- Key: [doc file](./assignments/keys/assignment_3_key.docx) | [R script](./assignments/keys/assignment_3_key.R) -->
 
 
 #### 3.4. Assignment 4
