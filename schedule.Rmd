@@ -144,7 +144,7 @@ Readings:
 
 Lecture: 
 
-- Class 10 - 12 (2/6,  2/11 and 2/13) slides: [html](./slides/EDUC643_10_categorical.html) | [pdf](./slides/EDUC643_10_categorical.pdf)
+- Class 10 - 12 (2/6,  2/11, 2/13 and 2/18) slides: [html](./slides/EDUC643_10_categorical.html) | [pdf](./slides/EDUC643_10_categorical.pdf)
 - Data: [dibels.csv](./data/dibels.csv) | [codebook](./data/dibels_codebook.pdf)
 - R code: [R script](./slides/EDUC643_10_code.R)
 - Labs:
@@ -158,10 +158,9 @@ Assignment 3:
 
 - Due: Feb. 24, 11:59pm
 
-<!--
 - Assignment: [html file](./assignments/assignment_4.html)
 - Data: [nerds.csv](./data/nerds.csv)
--->
+
 
 ## Unit 5: Interactions and non-linearity
  
@@ -188,8 +187,8 @@ Readings:
 Lecture: 
 
 <!--
-- Class 13-14 (2/22 and 2/27) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
-- Class 15-17 (2/29, 3/5 and 3/7) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf)
+- Class 13-14 (2/20 and 2/25) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
+- Class 15-17 (2/27, 3/4 and 3/6) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf)
 - Data: [dibels.csv](./data/dibels.csv) | [pisa.csv](./data/pisa.csv) | [oecd_2022.xlsx](./data/oecd_2022.xlsx)
 - R script: [interactions](./slides/EDUC643_13_code.R) | [non-linearity](./slides/EDUC643_16_code.R) 
 - Labs:
@@ -226,7 +225,7 @@ Readings:
 Lecture: 
 
 <!--
-- Class 18 slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
+- Class 18 (3/11) slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
 -->
 **Class cancelled on March 13** (David in Baltimore for AEFP Conference)
 

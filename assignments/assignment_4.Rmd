@@ -20,7 +20,7 @@ The purpose of this assignment is to practice the concepts and vocabulary we hav
 Please upload below two files on Canvas:  
 
 1. An .html, .doc(x) or .pdf file that includes your typed responses (in your own words and not identical to anybody else's except your partner), tables, and/or figures to the problems
-2. The .Rmd or .R file that you used to render the tables and figures in the above html/pdf. 
+2. The .Rmd or .R file that you used to render the tables and figures in the above html/pdf/doc. 
 
 **Please submit a complete memo that includes all figures/tables integrated into the memo, uses full sentences and does not include any code chunks interspersed (you will be graded on this). As a challenge, try to format your tables and figure following [APA 7 guidelines](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/apa_tables_and_figures.html) (you will not be graded on this).** 
 
