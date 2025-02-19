@@ -88,7 +88,7 @@ Objectives of this assignment:
  
  * Use categorical predictors as covariates and use them to plot prototypical values of continuous relationships
 
-Deadline: Feb. 24, 11:59pm
+Deadline: Feb. 28, 12:01pm (noon)
 
 
 Download: [html file](./assignments/assignment_4.html) | [nerds dataset](./data/nerds.csv)
@@ -106,7 +106,7 @@ Objectives of this assignment:
  
  * Construct plots conveying substantively accessible results of interaction models
  
-Deadline: March 7, 11:59pm
+Deadline: March 10, 12:01pm (noon)
 
 <!--
 Download: [html file](./assignments/assignment_5.html) | [nerds dataset](./data/nerds.csv)

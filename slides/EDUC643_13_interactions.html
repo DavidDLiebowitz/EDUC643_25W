@@ -60,9 +60,11 @@ class: center, middle, inverse, title-slide
 .small[A team of researchers based at the .green[**University of Oregon**] aimed to understand the effects of the COVID-19 pandemic on students' early literacy skills.&lt;sup&gt;1&lt;/sup&gt;]
 &lt;img src="dibels_team.png" width="1281" style="display: block; margin: auto;" /&gt;
 
+
 .small[Ann Swindells Professor in Special Education [Gina Biancarosa](https://education.uoregon.edu/directory/faculty/all/ginab), former UO doctoral students David Fainstein, Chris Ives, and Dave Furjanic, along with CTL Research Manager Patrick Kennedy, used data from assessments of 471,456 students across 1,684 schools on the Dynamic Indicators of Basic Early Literacy Skills (DIBELS) to analyze the extent to which students' Oral Reading Fluency (ORF) scores differed across four waves of DIBELS assessment prior-to and during the pandemic.]
 
-.small[Their study is forthcoming at the *Elementary School Journal*.]
+.small[Their study is published in [*The Elementary School Journal*](https://www.journals.uchicago.edu/doi/full/10.1086/730115).]
+
 
 .footnote[[1] For various reasons, the pandemic is a ["lousy natural experiment"](https://www.educationnext.org/covid-19-pandemic-lousy-natural-experiment-for-studying-the-effects-online-learning/) for examining the effects of a particular policy response (e.g, virtual schooling). However, it is quite possible to seek to understand its global effects via just the type of analysis Furjanic et al. conducted.]
 
@@ -294,11 +296,11 @@ Other interactions terms you may encounter: ***synergistic interaction***, ***bu
 1. How did students' Oral Reading Fluency (ORF) trajectories differ pre- and post-pandemic-onset?
    + Main effects model
 2. To what extent did differences in students' ORF trajectories pre- and post-pandemic-onset differ by the proportion of students receiving free- or reduced-price lunch (FRPL) in their schools?
-   + Interaction model: categorical X continuous
+   + Interaction model: **categorical X continuous**
 3. To what extent did differences in students' ORF trajectories pre- and post-pandemic-onset differ by the Title I status of their schools?
-   + Interaction model: categorical x categorical
+   + Interaction model: **categorical x categorical**
 4. To what extent do students' average ORF scores differ by the rate of FRPL-receipt and enrollment in their schools?
-   + Interaction model: continuous X continuous
+   + Interaction model: **continuous X continuous**
 ]
 
 ---
@@ -1018,7 +1020,7 @@ class: middle, inverse
         - Statistical power
   + Graph out the fitted model to ensure correct interpretation
         - Explore the `sjPlot` package for more ways to visualize interactions
-- **More learning (beyond course)**
+- **More learning (beyond this course)**
   + Centering and/or standardizing variables can aid with interpretation
   + The `contrast` and `emtrends` functions in the `emmeans` package can quickly test for whether fitted values at different levels of predictor and moderator are significantly different
 - **Predictors can interact with themselves** (next sub-unit: non-linearities)  
@@ -1051,11 +1053,11 @@ class: middle, inverse
 - **Finish by Feb. 27**: LSWR Chapter 16.2
 
 ### Assignment 3:
-- Due Feb. 26, 11:59pm
+- Due Feb. 28, 12:01pm (noon)
 
 ### Assignment 4 (last one!!!):
 - Just on interactions (not non-linearity)
-- Due Mar. 8, 11:59pm
+- Due Mar. 10, 11:59pm
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

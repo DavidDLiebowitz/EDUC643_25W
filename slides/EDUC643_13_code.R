@@ -2,7 +2,7 @@
 # Interactions
 ## Created by: David Liebowitz
 ### First created: 2/13/23
-### Last update: 2/21/24
+### Last update: 2/19/25
 ### inputs: dibels_long.csv
 ######################################################
 
@@ -48,6 +48,7 @@ attr(row, 'position') <- c(9)
 # Produce table
 modelsummary(list(fit3, fit4),
              stars=T,
+             escape=F,
              vcov = "robust",
              gof_omit = "Adj.|AIC|BIC|Log|RMSE|RSE|Std.Err",
              coef_omit = "grade|school_enroll",
@@ -66,7 +67,6 @@ df4 <- margins::margins(fit4,
 proto1 <- ggplot(data=df4, aes(x=frpl_prop, y=fitted, color=period)) + 
   geom_smooth(method='lm') +
   xlab("Proportion receiving FRPL") + ylab("Predicted ORF") +
-  ylim(35, 110) +
   scale_color_discrete(name = "Period",
                        breaks=c("y1_boy", "y1_moy", 
                                 "y2_boy", "y2_moy"),

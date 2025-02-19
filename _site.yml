@@ -34,17 +34,19 @@ navbar:
         href: ./slides/EDUC643_10_categorical.html
       - text: "12. Categorical predictors III"
         href: ./slides/EDUC643_10_categorical.html
-      - text: "13. Interactions I"
-        #href: ./slides/EDUC643_13_interactions.html
-      - text: "14. Interactions II"
-        #href: ./slides/EDUC643_13_interactions.html
-      - text: "15. Non-linearity I"
+      - text: "13. Categorical predictors IV"
+        href: ./slides/EDUC643_10_categorical.html
+      - text: "14. Interactions I"
+        href: ./slides/EDUC643_13_interactions.html
+      - text: "15. Interactions II"
+        href: ./slides/EDUC643_13_interactions.html
+      - text: "16. Non-linearity I"
         #href: ./slides/EDUC643_16_nonlinearity.html
-      - text: "16. Non-linearity II"
+      - text: "17. Non-linearity II"
         #href: ./slides/EDUC643_16_nonlinearity.html
-      - text: "17. Non-linearity III"
+      - text: "18. Non-linearity III"
         #href: ./slides/EDUC643_16_nonlinearity.html
-      - text: "18. Model building"
+      - text: "19. Model building"
         #href: ./slides/EDUC643_19_modeling.html
 
 
