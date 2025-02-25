@@ -593,10 +593,10 @@ Your Results section is not a diary of everything you did (e.g., don't walk your
 # To-Dos
 
 ### Final
-- Due March 23, 12:01p
+- Due March 20, 12:01p
 
 ### Re- (late) submissions
-- Everything due .red[**March 15, 5:00p**] (**no exceptions**)
+- Everything due .red[**March 14, 5:00p**] (**no exceptions**)
 - Assignments with scores <90% only
 - Earn up to 90%
 

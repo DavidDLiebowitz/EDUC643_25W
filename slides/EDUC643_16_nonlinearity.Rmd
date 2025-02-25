@@ -793,7 +793,7 @@ g2
 ]
 ]
 
---
+
 ```{r, fig.height=2.75, fig.width=5}
 g3
 ```
@@ -1070,7 +1070,7 @@ include_graphics("tukey_bulge.png")
    + Start with transforming x before y
    + Generally, do **not** use a "start" to log transform data that includes 0s
    + Inspect scatter plots post-transformation to check for success in linearizing
-      - With large data, can be hard to see; consider binscatter options (by hand or `binsreg`)
+      - With large data, can be hard to see; consider binscatter options (by hand or `binsreg`; more on this in our next unit)
 - **Predictors can interact with themselves**
    + Quadratic and cubic models provide a flexible strategy for fitting non-linear models, especially those that cannot be linearized by logarithms
    + Be careful about overfitting and model instability with polynomials of order >3!
@@ -1089,16 +1089,16 @@ include_graphics("tukey_bulge.png")
 # To-Dos
 
 ### Reading:
-- **By 3/7 class**: Campbell & Ramey (1994)
+- **By 3/6 class**: McIntosh et al. (2021) and discussion questions
 
 ### Assignment 4:
-- Due March 8, 11:59p
+- Due March 10, 12:01p
 
 ### Final
-- Due March 21, 12:01p
+- Due March 20, 12:01p
 
 ### Re- (late) submissions
-- Everything due March 15, 5:00p (no exceptions)
+- Everything due March 14, 5:00p (no exceptions)
 - Assignments with scores <90% only
 - Earn up to 90%
 
