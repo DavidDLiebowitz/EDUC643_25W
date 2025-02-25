@@ -203,3 +203,9 @@ cont <- ggplot(data=df7, aes(x=frpl_prop, y=fitted,
   theme_minimal(base_size=16)
 
 cont
+
+# could also add a 95% confidence interval band
+
+cont +
+  geom_ribbon(aes(ymin=fitted-1.96*se.fitted, ymax=fitted+1.96*se.fitted, fill=as.factor(school_enroll)), 
+              alpha=0.3, linetype=0, show.legend = F)

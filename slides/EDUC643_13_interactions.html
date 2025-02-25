@@ -809,11 +809,11 @@ Construct an equation of the form:
 
 $$
 `\begin{aligned}
-\hat{MEAN\_ORF}_j = &amp; \beta_0 + \beta_1 P_2 + \beta_2 P_3 + \beta_4 P_4 +  \\
-                    &amp; \beta_5 T_2 + \beta_6 T_3 + \beta_7 T_4 + \\
-                    &amp; \beta_8 P_2 \times T_2 + \beta_9 P_2 \times T_3 + \beta_{10} P_2 \times T_4 + \\
-                    &amp; \beta_{11} P_3 \times T_2 + \beta_{12} P_3 \times T_3 + \beta_{13} P_3 \times T_4 + \\
-                    &amp; \beta_{14} P_4 \times T_2 + \beta_{15} P_4 \times T_3 + \beta_{16} P_4 \times T_4 \\
+\hat{MEAN\_ORF}_j = &amp; \beta_0 + \beta_1 P_2 + \beta_2 P_3 + \beta_3 P_4 +  \\
+                    &amp; \beta_4 T_2 + \beta_5 T_3 + \beta_6 T_4 + \\
+                    &amp; \beta_7 P_2 \times T_2 + \beta_8 P_2 \times T_3 + \beta_{9} P_2 \times T_4 + \\
+                    &amp; \beta_{10} P_3 \times T_2 + \beta_{11} P_3 \times T_3 + \beta_{12} P_3 \times T_4 + \\
+                    &amp; \beta_{13} P_4 \times T_2 + \beta_{14} P_4 \times T_3 + \beta_{15} P_4 \times T_4 \\
 \end{aligned}`
 $$
 with the coefficients from the previous slide and determine the fitted equation comparing Title I schoolwide schools in Winter 2021 to Title I schoolwide schools in Fall 2019.
@@ -1001,6 +1001,16 @@ cont &lt;- ggplot(data=df7, aes(x=frpl_prop, y=fitted,
 ## Displaying continuous interactions
 &lt;img src="EDUC643_13_interactions_files/figure-html/unnamed-chunk-33-1.png" style="display: block; margin: auto;" /&gt;
 
+---
+## Can also add a confidence band
+
+```r
+cont +
+geom_ribbon(aes(ymin=fitted-1.96*se.fitted, ymax=fitted+1.96*se.fitted, 
+fill=as.factor(school_enroll)), alpha=0.3, linetype=0, show.legend = F)
+```
+
+&lt;img src="EDUC643_13_interactions_files/figure-html/unnamed-chunk-34-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 class: middle, inverse
@@ -1057,7 +1067,10 @@ class: middle, inverse
 
 ### Assignment 4 (last one!!!):
 - Just on interactions (not non-linearity)
-- Due Mar. 10, 11:59pm
+- Due Mar. 10, 12:01pm (noon)
+
+### Quiz 4:
+- **NOW!!** Due 5pm tomorrow, Feb. 26
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
