@@ -20,7 +20,7 @@ Let's integrate all (most) of what we've learned together over the past two term
 Please upload below two files on Canvas:  
 
 1. An .html, .doc(x) or .pdf file that includes your typed responses (in your own words and not identical to anybody else's except your partner), tables, and/or figures to the problems
-2. The .Rmd or .R file that you used to render the tables and figures in the above html/pdf. 
+2. The .Rmd or .R file that you used to render the tables and figures in the above html/pdf/doc. 
 
 **Please submit a complete "proto" paper (see below) that includes all figures/tables integrated into the manuscript (can be either in-line or at the end of the manuscript), uses full sentences and does not include any code chunks interspersed (you will be graded on this). Please format your manuscript, tables and figures following [APA 7 guidelines](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/apa_tables_and_figures.html).**
 
@@ -87,7 +87,7 @@ Your "proto" paper should be structured as follows:
     + Bivariate relationship between continuous outcome and categorical predictor
     + Multivariate relationship between continuous outcome and continuous predictor, adjusting for other predictor(s)
     + Assessment of the extent to which central assumptions of your modelling strategy have been met
-    + Tests for the presence of moderation and non-linearity
+    + Tests for the presence of moderation *and* non-linearity
 5. **Conclusion**: in which you state in 1-2 paragraphs the central findings (and appropriate caveats and nuances) of your analysis in language accessible to a lay audience
   
 **Please review the rubric on Canvas for more details on how the assignment will be assessed.**

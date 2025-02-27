@@ -196,7 +196,7 @@ Assignment 4:
 
 - Due: March 10, 12:01pm (noon)
 
-<!-- - Assignment: [html file](./assignments/assignment_5.html) -->
+- Assignment: [html file](./assignments/assignment_5.html)
 - Data: [nerds.csv](./data/nerds.csv)
 
 
@@ -230,7 +230,5 @@ Lecture:
 
 - Due: Mar. 20, 12:01pm
 
-<!--
 - Assignment: [html file](./assignments/assignment_6.html)
 - Data: [seda.csv](./data/seda.csv)
--->
