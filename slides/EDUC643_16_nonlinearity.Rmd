@@ -523,7 +523,7 @@ $$\text{log}_2(PPE_j) = \text{log}_2 \beta_0 + \beta_1 GDP_j + \varepsilon$$
 # Interpreting this
 
 Can interpret log outcomes as percent changes because:
-$$Y_1 = \beta_0 2^{\beta_1 X_1}$$
+$$Y_1 = \beta_0 2^{\beta_1 X}$$
 $$Y_2 = \beta_0 2^{\beta_1(X+1)} = \beta_0 2^{\beta_1 X} 2^{\beta_1}$$
 
 $$\frac{Y_2}{Y_1} = \frac{\beta_0 2^{\beta_1 X} 2^{\beta_1}}{\beta_0 2^{\beta_1 X}} = 2^{\beta_1}$$
