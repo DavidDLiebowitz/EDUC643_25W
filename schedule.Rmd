@@ -185,7 +185,8 @@ Lecture:
 
 
 - Class 14-15 (2/20 and 2/25) slides: [html](./slides/EDUC643_13_interactions.html) | [pdf](./slides/EDUC643_13_interactions.pdf)
-- Class 16-17 (2/27 and 3/4) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf) - Data: [dibels.csv](./data/dibels.csv) | [pisa.csv](./data/pisa.csv) | [oecd_2022.xlsx](./data/oecd_2022.xlsx)
+- Class 16-17 (2/27 and 3/4) slides: [html](./slides/EDUC643_16_nonlinearity.html) | [pdf](./slides/EDUC643_16_nonlinearity.pdf) 
+- Data: [dibels.csv](./data/dibels.csv) | [pisa.csv](./data/pisa.csv) | [oecd_2022.xlsx](./data/oecd_2022.xlsx)
 - R script: [interactions](./slides/EDUC643_13_code.R) | [non-linearity](./slides/EDUC643_16_code.R) 
 - Labs:
     + Week 8: [Rmd](./labs/Week8.Rmd)
