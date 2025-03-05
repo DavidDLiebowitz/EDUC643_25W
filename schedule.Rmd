@@ -178,7 +178,7 @@ Objectives
 Readings: 
 
 - **Complete prior to 2/27 class:** [LSWR Chapter 16.2](https://learningstatisticswithr.com/lsr-0.6.pdf)
-- **Complete prior to 3/6 class:** [McIntosh et al. 2021](./data/McIntosh et al 2021.pdf.pdf)
+- **Complete prior to 3/6 class:** [McIntosh et al. 2021](./data/McIntosh et al 2021.pdf)
     + Reading questions: <!-- [doc](./data/Campbell Ramey reading questions.docx) -->
 
 Lecture: 
