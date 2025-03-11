@@ -220,10 +220,8 @@ Readings:
 
 Lecture: 
 
-<!--
 - Class 19-20 (3/11 and 3/13) slides: [html](./slides/EDUC643_19_modeling.html) | [pdf](./slides/EDUC643_19_modeling.pdf)
 
--->
 
 ## Final:
 
