@@ -249,6 +249,26 @@ summary(lm(mpg ~ qsec, data=mtcars))
 ---
 # Mediation analysis
 ```{r, fig.height=2.5}
+dag2 <- ggdag::dagify(y ~ x,
+                     exposure = "x",
+                     outcome = "y",
+              labels = c("x" = "Engine type",
+                         "y" = "MPG"),
+              coords = list(x = c(x=2, y=3),
+                            y = c(x=3, y=2))
+                            )
+ggdag::ggdag(dag2, use_labels = "label", text=F, text_size = 6) +
+  ggdag::theme_dag() + 
+   guides(fill = F, color=F)
+```
+
+```{r, echo=T, output.lines = -c(1:8)}
+summary(lm(mpg ~ vs, data=mtcars))
+```
+
+---
+# Mediation analysis
+```{r, fig.height=2.5}
 dag3 <- ggdag::dagify(y ~ x + a,
                        a ~ x,
                      exposure = "x",
@@ -356,6 +376,7 @@ Adjusting for an individual's race/ethnicity (or other identity-based characteri
    + May contain information about direct discrimination and other factors generating this "statistical discrimination" (e.g., unequal education opportunities across racial identities)
 - Consider how others may interpret these estimates in ways different than your intent
    + Can easily be interpreted as evidence of individual-level identity-based differences without considering the unobserved societal-level factors driving them (aka, discrimination)
+   + Consider nesting individuals in a set of group-level identity vectors; for more on this consider SOC 613 (Multilevel and Panel Data Analysis) with UO sociologist Clare Evans -- a pioneer in .red-pink[**Intersectional Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy (I-MAIHDA)**]
 ]
 
 ---

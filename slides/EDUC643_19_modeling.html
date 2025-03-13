@@ -190,6 +190,30 @@ summary(lm(mpg ~ qsec, data=mtcars))
 
 
 ```r
+summary(lm(mpg ~ vs, data=mtcars))
+```
+
+```
+...
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   16.617      1.080  15.390 8.85e-16 ***
+## vs             7.940      1.632   4.864 3.42e-05 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 4.581 on 30 degrees of freedom
+## Multiple R-squared:  0.4409,	Adjusted R-squared:  0.4223 
+## F-statistic: 23.66 on 1 and 30 DF,  p-value: 3.416e-05
+...
+```
+
+---
+# Mediation analysis
+&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+
+
+```r
 summary(lm(mpg ~ qsec + vs, data=mtcars))
 ```
 
@@ -211,7 +235,7 @@ summary(lm(mpg ~ qsec + vs, data=mtcars))
 
 ---
 ## Problems with mediation analysis
-&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-9-1.png" style="display: block; margin: auto;" /&gt;
 
 --
 .small[If your "mediator" is correlated with any other variable (observed or unobserved), then it is **not** the case that the mediator is the mechanism by which your predictor is "indirectly" related to your outcome. This is true both for mediation analysis in the OLS framework as well as with Structural Equation Modeling (SEM).]
@@ -281,6 +305,7 @@ Adjusting for an individual's race/ethnicity (or other identity-based characteri
    + May contain information about direct discrimination and other factors generating this "statistical discrimination" (e.g., unequal education opportunities across racial identities)
 - Consider how others may interpret these estimates in ways different than your intent
    + Can easily be interpreted as evidence of individual-level identity-based differences without considering the unobserved societal-level factors driving them (aka, discrimination)
+   + Consider nesting individuals in a set of group-level identity vectors; for more on this consider SOC 613 (Multilevel and Panel Data Analysis) with UO sociologist Clare Evans -- a pioneer in .red-pink[**Intersectional Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy (I-MAIHDA)**]
 ]
 
 ---
@@ -354,7 +379,7 @@ ggplot(nerds, aes(frpl, ppe)) +
  geom_point() + theme_minimal()
 ```
 
-&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-12-1.png" style="display: block; margin: auto;" /&gt;
 ]
 
 --
@@ -366,7 +391,7 @@ binsreg::binsreg(y=nerds$ppe,
                  x=nerds$frpl)
 ```
 
-&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-11-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-13-1.png" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -585,7 +610,7 @@ proto &lt;- ggplot() +
 
 ---
 .small[**Figure 1.** *The predicted relationship between school-level poverty and per-pupil expenditure in Oregon, 2018-19*]
-&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-15-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="EDUC643_19_modeling_files/figure-html/unnamed-chunk-17-1.png" style="display: block; margin: auto;" /&gt;
 
 .tiny[*Notes*: fitted lines generated from Model 5 in Table 1, which includes adjustments for school enrollment, rurality, school level, avg. SES status and median log-income. Shaded areas are 95% confidence intervals using heteroscedastic-robust standard errors.]
 
